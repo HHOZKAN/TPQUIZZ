@@ -8,7 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-  <div class = 'height'>
+    <main class="container d-flex flex-column justify-content-center align-items-center">
+        <h1 class="border border-primary">Apprendre un don de dieu !</h1>
+        <form method="post" action="./process/add_user.php">
+            <div class="d-flex flex-column">
+                <input type="text" name="name" placeholder="Entrez un pseudo...">
+                <button type="submit">Se connecter</button>
+            </div>
+        </form>
+    </main>
+  <!-- <div class = 'height'>
 <div class="container text-center">
   <div class="row">
     <div class="col">
@@ -34,6 +43,6 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
 </body>
 </html>

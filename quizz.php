@@ -10,5 +10,9 @@
 </head>
 <body>
     
+
+    <?php include_once('./process/display_quizz.php'); ?>
+
+    
 </body>
 </html>

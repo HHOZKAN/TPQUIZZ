@@ -11,7 +11,7 @@
 <body>
     <main class="container d-flex flex-column justify-content-center align-items-center">
         <div class="justify-content-center align-items-cen ter">
-            <a href="quizz.php">
+            <a href="./process/initialize_quizz.php">
                 <button type="button" class="btn btn-success btn-lg">
                     Jouer au quizz !
                 </button>
