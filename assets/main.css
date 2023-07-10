@@ -1,0 +1,11 @@
+body {
+    height: 100vh;
+}
+
+.board,  .pseudos-scores, .graph, .pseudos, .scores {
+    width: 100%;
+    height: 100%;
+}
+
+
+
