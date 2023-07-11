@@ -21,7 +21,7 @@
                 </button>
             </div>
         </div>
-        <p> <?= count($_SESSION['questionsTable']) ?> </p>
-        <p> <?= $_SESSION['score'] ?> </p>       
+        <!-- <p> count($_SESSION['questionsTable']) ?> </p>
+        <p> $_SESSION['score'] ?> </p> -->
     </main>
 </body>

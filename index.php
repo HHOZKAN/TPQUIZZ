@@ -1,15 +1,16 @@
 <?php include_once('./partials/header.php') ?>
 
-
-<main class="container d-flex flex-column justify-content-center align-items-center">
-    <h1 class="border border-primary">Apprendre un don de dieu !</h1>
+<body class="index">
+  <main class="container d-flex flex-column justify-content-center align-items-center">
+    <h1 class="index-title">L'infini dans les cieux ! </h1>
     <form method="post" action="./process/add_user.php">
-        <div class="d-flex flex-column">
-            <input type="text" name="name" placeholder="Entrez un pseudo...">
-            <button type="submit">Se connecter</button>
-        </div>
-    </form>
-</main>
+      <div class="mt-5 input-group mb-3">
+          <input class="form-control" type="text" name="name" placeholder="Entrez un pseudo...">
+          <button class="form-control btn btn-secondary" type="submit">Se connecter</button>
+      </div>
+  </div>
+  </form>
+</body>
 
 
 <?php include_once('./partials/footer.php') ?>
