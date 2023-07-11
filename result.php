@@ -25,10 +25,15 @@ if ($_SESSION['score'] >= 17) {
 
 ?>
 
-<h2> <?= $response ?> </h2>
-<p>Ton score est de : <?= $_SESSION['score'] ?> </p>
-<a href="./board.php"><button>Continuer</button></a>
-
+<body class="result">
+    <main class="container d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-5">
+            <h2> <?= $response ?> </h2>
+            <p>Ton score est de : <?= $_SESSION['score'] ?> </p>
+            <a href="./board.php"><button class="btn btn-info">Continuer</button></a>
+        </div>
+    </main>
+</body>
 
 <?php include_once('./partials/header.php'); ?>
 

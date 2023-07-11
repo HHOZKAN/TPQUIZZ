@@ -8,4 +8,3 @@
     <link href="./assets/main.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>

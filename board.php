@@ -17,7 +17,7 @@ include('./utils/db_connect.php');
 
 <?php
 // On récupère tous les scores triés du meilleur au pire
-$request = $db->prepare('SELECT * FROM scores ORDER BY number DESC');
+$request = $db->prepare('SELECT * FROM scores ORDER BY number DESC ');
 $request->execute();
 $scoreList = $request->fetchAll(PDO::FETCH_ASSOC);
 
