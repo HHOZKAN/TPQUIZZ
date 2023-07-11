@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 session_start();
 include('../utils/db_connect.php');
 
