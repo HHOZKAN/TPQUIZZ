@@ -1,6 +1,8 @@
-main {
-    width: 100%;
+body {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .questions, .answers, .line1, .line2 {
@@ -10,3 +12,26 @@ main {
 .cell {
     width: 200px;
 }
+
+.box {
+    height: 150px;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .background {
+    background-image: url(./386441-4k-wallpaper\ \(1\).jpg);
+    padding : 450px;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+ 
+  }
+
+  .titreindex {
+    color: aliceblue;
+    font-size: 90px;
+  }
