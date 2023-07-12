@@ -1,6 +1,16 @@
-<?php   
+<?php
 session_start();
 include('./utils/db_connect.php');
+
+
+// Si la valeur du bouton est égale à true donc 1 on incrémente le score de 1
+if (isset($_POST['button'])) {
+    if ($_POST['button'] == 1) {
+        $_SESSION['score']++;
+    }
+    // Puis on enlève du tableau de $_SESSION la question à l'index 0
+    array_shift($_SESSION['questionsTable']);
+}
 
 // On regarde si notre tableau de questions en comporte plus que 0 
 if (!count($_SESSION['questionsTable']) == 0) {
@@ -11,23 +21,8 @@ if (!count($_SESSION['questionsTable']) == 0) {
     ]);
     $answersTable = $request->fetchAll();
 
-    // Si la valeur du bouton est égale true donc 1 on incrémente le score de 1
-    if (isset($_POST['button'])) {
-        if ($_POST['button'] == 1) {
-            $_SESSION['score']++;
-        }
-    } 
-
-
-include_once('./partials/form_quizz.php');
-
-
-    // Puis on enlève du tableau de $_SESSION la question à l'index 0
-    array_shift($_SESSION['questionsTable']);
-
+    include_once('./partials/form_quizz.php');
 } else {
     // Si il n'y a plus de questions dans le tableau, on renvoie sur la page des résultats
     header('Location: ./result.php');
 }
-
-?>

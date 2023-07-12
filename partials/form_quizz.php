@@ -20,8 +20,9 @@
                     <?= $answersTable[3]['text'] ?>
                 </button>
             </div>
-        </div>
-        <!-- <p> count($_SESSION['questionsTable']) ?> </p>
-        <p> $_SESSION['score'] ?> </p> -->
+        </form>
+        <p> <?php echo count($_SESSION['questionsTable']) ?> </p>
+        <p> <?php echo $_SESSION['score'] ?> </p>
+        <p> <?php //var_dump($_SESSION['questionsTable']) ?> </p>
     </main>
 </body>
